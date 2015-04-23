@@ -1,0 +1,10 @@
+<h1>Top 10 Restaurant</h1>
+<ul>
+  <%= @restaurants.each do |r| %>
+		<li>
+			<%= link_to "#{r.name}-#{r.phone}", restaurant_path(r) %>
+			
+		</li>
+	<% end %>
+</ul>
+ 
