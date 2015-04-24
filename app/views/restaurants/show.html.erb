@@ -2,5 +2,5 @@
 <p><%= @restaurant.address %>, <%= @restaurant.phone %></p>
 <p><%= @restaurant.description %></p>
 
-
+<%= link_to "Reserve Now!", new_restaurant_reservation_path(@restaurant) %>
 <%= link_to "Back", restaurants_path %>
